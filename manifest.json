@@ -9,10 +9,6 @@
   },
   "description": "Make every youtube video into a Sechi Cameo!",
   "host_permissions": ["https://www.youtube.com/*"],
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
 
   "_comment1": "when it sees you on youtube.com(and its finished loading from document_idle), itll run main.js",  
   "content_scripts": [
