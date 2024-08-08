@@ -1,0 +1,41 @@
+{
+
+  "_comment": "this is p much the base stuff",
+  "manifest_version": 3,
+  "name": "Sechify",
+  "version": "1.0",
+  "icons": {
+    "128": "assets/icon/icon-128.png"
+  },
+  "description": "Make every youtube video into a Sechi Cameo!",
+  "host_permissions": ["https://www.youtube.com/*"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+  "_comment1": "when it sees you on youtube.com(and its finished loading from document_idle), itll run main.js",  
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "_comment2":"lets websites access these within the extension. in this case, ANY(matches) can access ANY(*) file in images that is a png",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/images/*.png"
+      ],
+      "matches": ["*://*/*"]
+    }
+  ],
+
+  "_comment3": "this is the button on the browser toolbar",
+  "action": {
+    "default_popup": "popup.html"
+  }
+  
+}

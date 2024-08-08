@@ -1,2 +1,2 @@
 # Sechify
-Overlay Youtube thumbnails with BA characters drawn by BlueSechi
+A chrome extension that makes every thumbnail on youtube have art from the artist BlueSechi
