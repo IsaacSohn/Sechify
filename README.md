@@ -9,3 +9,5 @@ Jambofy: https://github.com/LiamHarrison25/Jambofy-Extension
 Mrbeastify: https://github.com/MagicJinn/MrBeastify-Youtube
 
 Feel free to modify my extension to make whatever you like. I put a lot of comments to explain the entire thing :) (just credit me or smth lmao)
+
+Support me on kofi if you want and can: https://ko-fi.com/chikenuwu
