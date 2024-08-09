@@ -32,7 +32,7 @@
 
     //get random image index
     function getRandomImageIndex() {
-        return Math.floor(Math.random() * (numImages+1));
+        return Math.floor(Math.random() * (numImages) + 1);
     }
     // get url of the overlay image
     function getOverlayUrl(index) {
