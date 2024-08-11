@@ -1,5 +1,5 @@
 (() => {
-    const numImages = 74;
+    const numImages = 78;
 
     // get all yt thumbnails
     function getThumbnails() {
