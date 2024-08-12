@@ -1,30 +1,94 @@
-<html>
-    <head>
-        <title>Jambofy Extension</title>
-    </head>
-    <style type="text/css">
-        body
-        {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 220px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+        }
+        .icons{
+            margin-top: 10px;
+        }
+        .icons a {
             margin: 5px;
+            text-decoration: none;
         }
-        h1
-        {
-            font-size: 12px;
-            text-align: center;
+        .icons img {
+            height: 40px;
         }
-        html
-        {
-            width: 350px;  /* max: 800px */
-            height: 150px; /* max: 600px */
+
+        header {
+            font-size: 36px; /* Makes the text larger */
+            font-weight: bold; /* Makes the text bold */
+            margin-bottom: 20px;
         }
     </style>
-    <body>
-        <h1>ill... work on the popup later</h1>
-        <!-- TODO: MAKE THIS TOGGLE WORK -->
-        <!-- <button id="ToggleButton"></button> -->
+</head>
+<body>
+    <header>Sechify</header>
+    <button id="toggle-overlay">Disable Overlays</button>
 
-    </body>
-
+    <div class="footer">
+        <div class="profile">
+            <img src="assets/popup/profile.jpeg" alt="Profile Picture">
+            <span>Created by chikenuwu</span>
+        </div>
+    </div>
+    <div class="icons">
+        
+        <a href="https://ko-fi.com/chikenuwu" target="_blank">
+            <img src="assets/popup/kofi.webp" alt="Ko-fi">
+        </a>
+        <a href="https://www.youtube.com/@chikenuwu" target="_blank">
+            <img src="assets/popup/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://x.com/Chikenqwq" target="_blank">
+            <img src="assets/popup/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://github.com/IsaacSohn/Sechify" target="_blank">
+            <img src="assets/popup/github.png" alt="Github">
+        </a>
+    </div>
+    <footer>v1.2</footer>
 
     <script src="popup.js"></script>
+</body>
 </html>

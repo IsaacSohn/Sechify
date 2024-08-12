@@ -1,14 +1,16 @@
 {
-
   "_comment": "this is p much the base stuff",
   "manifest_version": 3,
   "name": "Sechify",
-  "version": "1.0",
+  "version": "1.2",
   "icons": {
     "128": "assets/icon/icon-128.png"
   },
-  "description": "Make every youtube video into a Sechi Cameo!",
+  "description": "Make every YouTube video into a Blue-Archive Sechi Cameo!",
   "host_permissions": ["https://www.youtube.com/*"],
+  "permissions": [
+    "storage"
+  ],
 
   "_comment1": "when it sees you on youtube.com(and its finished loading from document_idle), itll run main.js",  
   "content_scripts": [
@@ -18,20 +20,29 @@
       "run_at": "document_idle"
     }
   ],
-
   "_comment2":"lets websites access these within the extension. in this case, ANY(matches) can access ANY(*) file in images that is a png",
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/images/*.png"
+        "assets/images/*.png",
+        "assets/popup/*.jpeg",
+        "assets/popup/*.webp",
+        "assets/popup/*.png"
       ],
-      "matches": ["*://*/*"]
+      "matches": ["<all_urls>"]
     }
   ],
-
   "_comment3": "this is the button on the browser toolbar",
   "action": {
     "default_popup": "popup.html"
+  },
+  "_comment4": "FIREFOX STUFF AYDGBCUASDFUYTXAFVSDYX",
+
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "sechify@helpme.com",
+    "strict_min_version": "58.0"
   }
-  
+}
+
 }
