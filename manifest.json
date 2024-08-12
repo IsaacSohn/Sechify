@@ -24,7 +24,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/images/*.png",
+        "assets/images/*.PNG",
         "assets/popup/*.jpeg",
         "assets/popup/*.webp",
         "assets/popup/*.png"
