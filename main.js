@@ -43,7 +43,7 @@
 
         // Get URL of the overlay image
         function getOverlayUrl(index) {
-            return chrome.runtime.getURL(`assets/images/${index}.png`);
+            return chrome.runtime.getURL(`assets/images/${index}.PNG`);
         }
 
         // Observe the entire body of the document for changes
